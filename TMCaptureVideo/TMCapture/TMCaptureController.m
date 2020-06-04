@@ -505,7 +505,6 @@
 
 - (void)showVideo:(NSURL *)playURL {
     TMCaptureVideoPreviewer *playView= [[TMCaptureVideoPreviewer alloc]initWithFrame:self.view.bounds playURL:playURL];
-    playView.backgroundColor = [UIColor blackColor];
     [self.view addSubview:playView];
     TMWS(weakSelf);
     playView.backBlock = ^{

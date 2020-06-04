@@ -31,7 +31,12 @@
 
 - (void)buttonClick {
     TMCaptureController *v = [[TMCaptureController alloc] init];
-    v.captureType = TMCaptureTypeAll;
+    v.completionBlock = ^(UIImage * _Nonnull image, NSString * _Nonnull imagePath, NSString * _Nonnull videoPath, PHAsset * _Nonnull asset) {
+        NSLog(@"image:%@",image);
+        NSLog(@"imagePath:%@",imagePath);
+        NSLog(@"videoPath:%@",videoPath);
+        NSLog(@"asset:%@",asset);
+    };
     [self presentViewController:v animated:YES completion:nil];
 }
 
