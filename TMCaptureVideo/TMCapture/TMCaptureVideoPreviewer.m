@@ -44,7 +44,7 @@
 
 - (void)setupItems {
     UIButton *backButton = [[UIButton alloc] initWithFrame:CGRectMake(12, TMNavY(20), 44, 44)];
-    [backButton setImage:[UIImage imageNamed:@"dx_circle_back"] forState:UIControlStateNormal];
+    [backButton setImage:TMImage(@"tm_capture_back") forState:UIControlStateNormal];
     [backButton addTarget:self action:@selector(onBackClick) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:backButton];
     

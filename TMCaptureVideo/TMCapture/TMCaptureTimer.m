@@ -42,10 +42,10 @@
     //定时器延时时间
     NSTimeInterval delayTime = 0.f;
     //定时器间隔时间
-    NSTimeInterval timeInterval = 0.02f;
+    NSTimeInterval timeInterval = 0.1f;
     //设置开始时间
     dispatch_time_t startDelayTime = dispatch_time(DISPATCH_TIME_NOW, (uint64_t)(delayTime * NSEC_PER_SEC));
-    dispatch_source_set_timer(self.gcdTimer, startDelayTime, (uint64_t)(timeInterval * NSEC_PER_SEC), (uint64_t)(timeInterval * NSEC_PER_SEC));
+    dispatch_source_set_timer(self.gcdTimer, startDelayTime, timeInterval * NSEC_PER_SEC, timeInterval * NSEC_PER_SEC);
     /** 设置定时器任务
     * 可以通过block方式
     * 也可以通过C函数方式
@@ -68,6 +68,8 @@
             });
         }
     });
+    //启动任务，GCD定时器创建后需要手动启动
+    dispatch_resume(self.gcdTimer);
 }
 
 - (void)stopTimer {

@@ -206,7 +206,7 @@
         _backBtn.frame = CGRectMake(60, 0, 44, 44);
         _backBtn.tm_centerY = self.recordBackView.tm_centerY;
         _backBtn.tm_right = self.recordBackView.tm_left - 40;
-        [_backBtn setImage:[UIImage imageNamed:@"dx_write_arrow_down"] forState:UIControlStateNormal];
+        [_backBtn setImage:TMImage(@"tm_capture_close") forState:UIControlStateNormal];
         [_backBtn addTarget:self action:@selector(backBtn:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _backBtn;
@@ -251,7 +251,7 @@
 - (UIButton *)switchCameraBtn {
     if (!_switchCameraBtn) {
         _switchCameraBtn = [[UIButton alloc] initWithFrame:CGRectMake(self.view.tm_width - 44 - 15, TMNavY(25) , 44, 44)];
-        [_switchCameraBtn setImage:[UIImage imageNamed:@"dx_photo_front"] forState:UIControlStateNormal];
+        [_switchCameraBtn setImage:TMImage(@"tm_capture_switchCamera") forState:UIControlStateNormal];
         [_switchCameraBtn addTarget:self action:@selector(switchCameraClicked:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _switchCameraBtn;
@@ -271,7 +271,7 @@
         //线头的样式
         _progressLayer.lineCap = kCALineCapButt;
         //圆环颜色
-        _progressLayer.strokeColor = [UIColor colorWithHex:0x2883e0].CGColor;
+        _progressLayer.strokeColor = [UIColor colorWithHex:0x2daf2d].CGColor;
         _progressLayer.strokeStart = 0;
         _progressLayer.strokeEnd = 0;
         //path 决定layer将被渲染成何种形状
@@ -440,7 +440,7 @@
     [self.timer startTimer];
     
     [TMCaptureTool createCaptureTempDirIfNotExist];
-    NSString *outputVideoFielPath = [TMCaptureTempDir stringByAppendingPathComponent:@"cxt_tmp_video.mp4"];
+    NSString *outputVideoFielPath = [TMCaptureTempDir stringByAppendingPathComponent:@"tm_tmp_video.mp4"];
     [self.avWriterInput startWritingToOutputFileAtPath:outputVideoFielPath fileType:TMCaptureAudioSessionTypeVideo deviceOrientation:self.avCaptureSession.shootingOrientation];
     self.isRecording = YES;
 }
@@ -516,7 +516,7 @@
         [TMCaptureTool createCaptureTempDirIfNotExist];
 
         
-        NSString *outputVideoFielPath = [TMCaptureTempDir stringByAppendingPathComponent:@"cxt_capture_video.mp4"];
+        NSString *outputVideoFielPath = [TMCaptureTempDir stringByAppendingPathComponent:@"tm_capture_video.mp4"];
         NSURL *url = [NSURL fileURLWithPath:outputVideoFielPath];
         videoExportSession.outputURL = url;
         videoExportSession.isNativeAudio = YES;
