@@ -22,6 +22,11 @@
 		AAAE530624888B7900C8E516 /* TMCaptureController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAE530524888B7900C8E516 /* TMCaptureController.m */; };
 		AAAE530A24888BCE00C8E516 /* TMAuthTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAE530924888BCE00C8E516 /* TMAuthTool.m */; };
 		AAAE530E2488BC8600C8E516 /* TMCaptureTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAE530D2488BC8600C8E516 /* TMCaptureTool.m */; };
+		AAAE53112488CBBF00C8E516 /* TMCaptureImagePreviewer.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAE53102488CBBF00C8E516 /* TMCaptureImagePreviewer.m */; };
+		AAAE53142488CBD700C8E516 /* TMCaptureVideoPreviewer.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAE53132488CBD700C8E516 /* TMCaptureVideoPreviewer.m */; };
+		AAAE53172488D25A00C8E516 /* TMCaptureFocusView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAE53162488D25A00C8E516 /* TMCaptureFocusView.m */; };
+		AAAE531A2488D31800C8E516 /* TMCaptureTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAE53192488D31800C8E516 /* TMCaptureTimer.m */; };
+		AAAE531D2488E60100C8E516 /* TMCaptureEditExport.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAE531C2488E60100C8E516 /* TMCaptureEditExport.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +79,16 @@
 		AAAE530B2488905C00C8E516 /* TMDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMDefine.h; sourceTree = "<group>"; };
 		AAAE530C2488BC8600C8E516 /* TMCaptureTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMCaptureTool.h; sourceTree = "<group>"; };
 		AAAE530D2488BC8600C8E516 /* TMCaptureTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMCaptureTool.m; sourceTree = "<group>"; };
+		AAAE530F2488CBBF00C8E516 /* TMCaptureImagePreviewer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMCaptureImagePreviewer.h; sourceTree = "<group>"; };
+		AAAE53102488CBBF00C8E516 /* TMCaptureImagePreviewer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMCaptureImagePreviewer.m; sourceTree = "<group>"; };
+		AAAE53122488CBD700C8E516 /* TMCaptureVideoPreviewer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMCaptureVideoPreviewer.h; sourceTree = "<group>"; };
+		AAAE53132488CBD700C8E516 /* TMCaptureVideoPreviewer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMCaptureVideoPreviewer.m; sourceTree = "<group>"; };
+		AAAE53152488D25A00C8E516 /* TMCaptureFocusView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMCaptureFocusView.h; sourceTree = "<group>"; };
+		AAAE53162488D25A00C8E516 /* TMCaptureFocusView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMCaptureFocusView.m; sourceTree = "<group>"; };
+		AAAE53182488D31800C8E516 /* TMCaptureTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMCaptureTimer.h; sourceTree = "<group>"; };
+		AAAE53192488D31800C8E516 /* TMCaptureTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMCaptureTimer.m; sourceTree = "<group>"; };
+		AAAE531B2488E60100C8E516 /* TMCaptureEditExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMCaptureEditExport.h; sourceTree = "<group>"; };
+		AAAE531C2488E60100C8E516 /* TMCaptureEditExport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMCaptureEditExport.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +178,16 @@
 				AAAE52F624888A7300C8E516 /* Category */,
 				AAAE530424888B7900C8E516 /* TMCaptureController.h */,
 				AAAE530524888B7900C8E516 /* TMCaptureController.m */,
+				AAAE530F2488CBBF00C8E516 /* TMCaptureImagePreviewer.h */,
+				AAAE53102488CBBF00C8E516 /* TMCaptureImagePreviewer.m */,
+				AAAE53122488CBD700C8E516 /* TMCaptureVideoPreviewer.h */,
+				AAAE53132488CBD700C8E516 /* TMCaptureVideoPreviewer.m */,
+				AAAE53152488D25A00C8E516 /* TMCaptureFocusView.h */,
+				AAAE53162488D25A00C8E516 /* TMCaptureFocusView.m */,
+				AAAE53182488D31800C8E516 /* TMCaptureTimer.h */,
+				AAAE53192488D31800C8E516 /* TMCaptureTimer.m */,
+				AAAE531B2488E60100C8E516 /* TMCaptureEditExport.h */,
+				AAAE531C2488E60100C8E516 /* TMCaptureEditExport.m */,
 				AAAE530B2488905C00C8E516 /* TMDefine.h */,
 			);
 			path = TMCapture;
@@ -325,15 +350,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAAE531D2488E60100C8E516 /* TMCaptureEditExport.m in Sources */,
 				AAAE52FF24888A9900C8E516 /* UIColor+TM.m in Sources */,
 				AAAE530A24888BCE00C8E516 /* TMAuthTool.m in Sources */,
 				AAAE530624888B7900C8E516 /* TMCaptureController.m in Sources */,
+				AAAE531A2488D31800C8E516 /* TMCaptureTimer.m in Sources */,
 				AAAE530224888A9900C8E516 /* UIImage+TM.m in Sources */,
 				AAAE52C82488887B00C8E516 /* ViewController.m in Sources */,
+				AAAE53142488CBD700C8E516 /* TMCaptureVideoPreviewer.m in Sources */,
 				AAAE530024888A9900C8E516 /* UIView+TM.m in Sources */,
 				AAAE52C22488887B00C8E516 /* AppDelegate.m in Sources */,
 				AAAE52D32488887D00C8E516 /* main.m in Sources */,
 				AAAE530124888A9900C8E516 /* UIViewController+TM.m in Sources */,
+				AAAE53172488D25A00C8E516 /* TMCaptureFocusView.m in Sources */,
+				AAAE53112488CBBF00C8E516 /* TMCaptureImagePreviewer.m in Sources */,
 				AAAE530E2488BC8600C8E516 /* TMCaptureTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

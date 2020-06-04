@@ -15,5 +15,14 @@
 ///存储图片的沙盒地址
 #define TMCaptureTempDir [NSTemporaryDirectory() stringByAppendingPathComponent:@"capture"]
 
+///加载图片
+#define TMImage(imageName) [UIImage imageNamed:imageName]
+
+///尺寸
+#define iPhoneQLH ([UIScreen mainScreen].bounds.size.height == 812 || [UIScreen mainScreen].bounds.size.height == 896)
+#define TMNavY(R) (iPhoneQLH ? R+24 : R)
+#define TMSafeH   (iPhoneQLH ? 34 : 0)
+#define TMNavH    (iPhoneQLH ? 88 : 64)
+
 
 #endif /* TMDefine_h */
