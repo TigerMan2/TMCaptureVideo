@@ -15,6 +15,12 @@
 		AAAE52D32488887D00C8E516 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAE52D22488887D00C8E516 /* main.m */; };
 		AAAE52DD2488887D00C8E516 /* TMCaptureVideoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAE52DC2488887D00C8E516 /* TMCaptureVideoTests.m */; };
 		AAAE52E82488887D00C8E516 /* TMCaptureVideoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAE52E72488887D00C8E516 /* TMCaptureVideoUITests.m */; };
+		AAAE52FF24888A9900C8E516 /* UIColor+TM.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAE52F824888A9800C8E516 /* UIColor+TM.m */; };
+		AAAE530024888A9900C8E516 /* UIView+TM.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAE52F924888A9800C8E516 /* UIView+TM.m */; };
+		AAAE530124888A9900C8E516 /* UIViewController+TM.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAE52FA24888A9900C8E516 /* UIViewController+TM.m */; };
+		AAAE530224888A9900C8E516 /* UIImage+TM.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAE52FD24888A9900C8E516 /* UIImage+TM.m */; };
+		AAAE530624888B7900C8E516 /* TMCaptureController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAE530524888B7900C8E516 /* TMCaptureController.m */; };
+		AAAE530A24888BCE00C8E516 /* TMAuthTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAE530924888BCE00C8E516 /* TMAuthTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,20 @@
 		AAAE52E32488887D00C8E516 /* TMCaptureVideoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMCaptureVideoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAAE52E72488887D00C8E516 /* TMCaptureVideoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMCaptureVideoUITests.m; sourceTree = "<group>"; };
 		AAAE52E92488887D00C8E516 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAAE52F724888A9800C8E516 /* UIImage+TM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TM.h"; sourceTree = "<group>"; };
+		AAAE52F824888A9800C8E516 /* UIColor+TM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TM.m"; sourceTree = "<group>"; };
+		AAAE52F924888A9800C8E516 /* UIView+TM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TM.m"; sourceTree = "<group>"; };
+		AAAE52FA24888A9900C8E516 /* UIViewController+TM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TM.m"; sourceTree = "<group>"; };
+		AAAE52FB24888A9900C8E516 /* UIColor+TM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+TM.h"; sourceTree = "<group>"; };
+		AAAE52FC24888A9900C8E516 /* UIViewController+TM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TM.h"; sourceTree = "<group>"; };
+		AAAE52FD24888A9900C8E516 /* UIImage+TM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TM.m"; sourceTree = "<group>"; };
+		AAAE52FE24888A9900C8E516 /* UIView+TM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TM.h"; sourceTree = "<group>"; };
+		AAAE530324888AD400C8E516 /* TMCategoryHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMCategoryHeader.h; sourceTree = "<group>"; };
+		AAAE530424888B7900C8E516 /* TMCaptureController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMCaptureController.h; sourceTree = "<group>"; };
+		AAAE530524888B7900C8E516 /* TMCaptureController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMCaptureController.m; sourceTree = "<group>"; };
+		AAAE530824888BCE00C8E516 /* TMAuthTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMAuthTool.h; sourceTree = "<group>"; };
+		AAAE530924888BCE00C8E516 /* TMAuthTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMAuthTool.m; sourceTree = "<group>"; };
+		AAAE530B2488905C00C8E516 /* TMDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMDefine.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,8 +156,38 @@
 		AAAE52F52488892900C8E516 /* TMCapture */ = {
 			isa = PBXGroup;
 			children = (
+				AAAE530724888B9300C8E516 /* Tools */,
+				AAAE52F624888A7300C8E516 /* Category */,
+				AAAE530424888B7900C8E516 /* TMCaptureController.h */,
+				AAAE530524888B7900C8E516 /* TMCaptureController.m */,
+				AAAE530B2488905C00C8E516 /* TMDefine.h */,
 			);
 			path = TMCapture;
+			sourceTree = "<group>";
+		};
+		AAAE52F624888A7300C8E516 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				AAAE52FB24888A9900C8E516 /* UIColor+TM.h */,
+				AAAE52F824888A9800C8E516 /* UIColor+TM.m */,
+				AAAE52F724888A9800C8E516 /* UIImage+TM.h */,
+				AAAE52FD24888A9900C8E516 /* UIImage+TM.m */,
+				AAAE52FE24888A9900C8E516 /* UIView+TM.h */,
+				AAAE52F924888A9800C8E516 /* UIView+TM.m */,
+				AAAE52FC24888A9900C8E516 /* UIViewController+TM.h */,
+				AAAE52FA24888A9900C8E516 /* UIViewController+TM.m */,
+				AAAE530324888AD400C8E516 /* TMCategoryHeader.h */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		AAAE530724888B9300C8E516 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				AAAE530824888BCE00C8E516 /* TMAuthTool.h */,
+				AAAE530924888BCE00C8E516 /* TMAuthTool.m */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +320,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAAE52FF24888A9900C8E516 /* UIColor+TM.m in Sources */,
+				AAAE530A24888BCE00C8E516 /* TMAuthTool.m in Sources */,
+				AAAE530624888B7900C8E516 /* TMCaptureController.m in Sources */,
+				AAAE530224888A9900C8E516 /* UIImage+TM.m in Sources */,
 				AAAE52C82488887B00C8E516 /* ViewController.m in Sources */,
+				AAAE530024888A9900C8E516 /* UIView+TM.m in Sources */,
 				AAAE52C22488887B00C8E516 /* AppDelegate.m in Sources */,
 				AAAE52D32488887D00C8E516 /* main.m in Sources */,
+				AAAE530124888A9900C8E516 /* UIViewController+TM.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
