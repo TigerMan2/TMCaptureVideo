@@ -24,5 +24,9 @@
 #define TMSafeH   (iPhoneQLH ? 34 : 0)
 #define TMNavH    (iPhoneQLH ? 88 : 64)
 
+#define TMSCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define TMSCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+#define TMWS(weakSelf) __weak typeof(self) weakSelf = self
 
 #endif /* TMDefine_h */
