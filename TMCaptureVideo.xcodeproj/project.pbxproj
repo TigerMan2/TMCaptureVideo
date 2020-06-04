@@ -21,6 +21,7 @@
 		AAAE530224888A9900C8E516 /* UIImage+TM.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAE52FD24888A9900C8E516 /* UIImage+TM.m */; };
 		AAAE530624888B7900C8E516 /* TMCaptureController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAE530524888B7900C8E516 /* TMCaptureController.m */; };
 		AAAE530A24888BCE00C8E516 /* TMAuthTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAE530924888BCE00C8E516 /* TMAuthTool.m */; };
+		AAAE530E2488BC8600C8E516 /* TMCaptureTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAE530D2488BC8600C8E516 /* TMCaptureTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,8 @@
 		AAAE530824888BCE00C8E516 /* TMAuthTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMAuthTool.h; sourceTree = "<group>"; };
 		AAAE530924888BCE00C8E516 /* TMAuthTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMAuthTool.m; sourceTree = "<group>"; };
 		AAAE530B2488905C00C8E516 /* TMDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMDefine.h; sourceTree = "<group>"; };
+		AAAE530C2488BC8600C8E516 /* TMCaptureTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMCaptureTool.h; sourceTree = "<group>"; };
+		AAAE530D2488BC8600C8E516 /* TMCaptureTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMCaptureTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +189,8 @@
 			children = (
 				AAAE530824888BCE00C8E516 /* TMAuthTool.h */,
 				AAAE530924888BCE00C8E516 /* TMAuthTool.m */,
+				AAAE530C2488BC8600C8E516 /* TMCaptureTool.h */,
+				AAAE530D2488BC8600C8E516 /* TMCaptureTool.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -329,6 +334,7 @@
 				AAAE52C22488887B00C8E516 /* AppDelegate.m in Sources */,
 				AAAE52D32488887D00C8E516 /* main.m in Sources */,
 				AAAE530124888A9900C8E516 /* UIViewController+TM.m in Sources */,
+				AAAE530E2488BC8600C8E516 /* TMCaptureTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

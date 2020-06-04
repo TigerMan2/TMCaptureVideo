@@ -12,5 +12,8 @@
 ///主线程操作
 #define TM_DISPATCH_ON_MAIN_THREAD(mainQueueBlock) dispatch_async(dispatch_get_main_queue(),mainQueueBlock);
 
+///存储图片的沙盒地址
+#define TMCaptureTempDir [NSTemporaryDirectory() stringByAppendingPathComponent:@"capture"]
+
 
 #endif /* TMDefine_h */
