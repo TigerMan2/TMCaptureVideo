@@ -471,7 +471,7 @@
     self.backBtn.hidden = NO;
 }
 
-#pragma mark - SLAvCaptureSessionDelegate 音视频实时输出代理
+#pragma mark - TMCaptureVideoSessionDelegate 音视频实时输出代理
 //实时输出视频样本
 - (void)captureSession:(TMCaptureVideoSession * _Nullable)captureSession didOutputVideoSampleBuffer:(CMSampleBufferRef _Nullable)sampleBuffer fromConnection:(AVCaptureConnection * _Nullable)connection {
     @autoreleasepool {
@@ -496,7 +496,7 @@
     }
 }
 
-#pragma mark - SLAvWriterInputDelegate 音视频写入完成
+#pragma mark - TMCaptureWriterInputDelegate 音视频写入完成
 //音视频写入完成
 - (void)writerInput:(TMCaptureWriterInput *)writerInput didFinishRecordingToOutputFileAtURL:(NSURL *)outputFileURL error:(NSError *)error {
     [self stopCapture];
